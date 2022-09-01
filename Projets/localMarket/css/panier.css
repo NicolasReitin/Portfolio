@@ -1,0 +1,167 @@
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+html{
+    font-family: 'Signika','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.retourIndex a{
+    width: 80%;
+    text-decoration: none;
+    color: black;
+}
+i{
+    margin-right: 20px;
+    font-size: 20px;
+    color: rgb(255,153,0);
+}
+.retourIndex{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.retourIndex a:hover{
+    text-decoration: none;
+    color: rgb(255,153,0);
+}
+.sectionPanier{
+    margin: 3% 10%;
+}
+table{
+    margin-top: 10px;
+}
+.sectionPanier h2{
+    margin-top: 20px;
+    text-align: center;
+    color: rgb(255,153,0);
+}
+.passCommand{
+    margin-left: 45%;
+}
+.deleteAll{
+    margin-left: 80%;
+    flex-wrap: nowrap;
+}
+
+.btnDelete{
+    background-color: #dc3545 !important;
+}
+.btnDelete:hover{
+    background-color: #b12d3a !important;
+}
+
+
+
+
+@media screen and (max-width:950px) {
+    /*------------------------Header--------------------------*/
+    .cityAccount{
+        display: none;
+    }
+    .search{
+        width: 50%;
+        margin-left: 80px;
+    }
+    .searchBar{
+        width: 100%;
+    }
+    .blocAccount{
+        width: 5%;
+        margin-right: 50px;
+        margin-left: 0%;
+        padding-left: 25px;
+    }
+    .blocAccount a{
+        font-size: 12px;
+    }
+    .dropdown span{
+        top: 32px;
+        right: 100%;
+        font-size: 8px;
+        padding: 1px 4px;
+        border-radius: 50%;
+    }
+    .icoPanier{
+        width: 30px;
+        top: 40px;
+        right: 100%;
+    }
+    .dropdown p{
+        font-size: 12px;
+    }
+
+}
+
+    @media screen and (max-width:550px) {
+        /*------------------------Header--------------------------*/
+    nav{
+        display: none;
+    }
+    header{
+        display: block;
+        height: 450px;
+    }
+    .blocLogo{
+        width: 40%;
+        margin-left: 30%;  
+        margin-bottom: 20px;  
+    }
+    .search{
+        width: 80%;
+        margin-left: 50px;
+        margin-bottom: 20px;
+    }
+    .blocAccount{
+        margin-left: 30%;
+    }
+    .blocAccount a{
+        font-size: 20px;
+    }
+    .dropdown{
+        margin-left: 50%;
+    }
+    .dropdown span{
+        top: 15px;
+        right: 95%;
+        font-size: 12px;
+        padding: 1px 6px;
+        border-radius: 50%;
+    }
+    .icoPanier{
+        width: 60px;
+        position: absolute;
+        top: 20px;
+        right: 100%;
+    }
+    .dropdown p{
+        font-size: 20px;
+    }
+
+       /*------------------------footer--------------------------*/
+       .blocFooter{
+        display: block;
+        text-align: center;
+        gap: 5%;
+    }
+    .aPropos{
+        margin-left: 0%;
+    }
+    .blocSocial{
+        margin-left: 25%;
+        gap: 20%;
+    }
+    .blocFooter h4{
+        margin-bottom: 20px;
+    }
+    .logoFooter{
+        width: 25%;
+        margin-left: 0%;
+        margin-top: 5%;
+        border-radius: 30%;
+        margin-left: 60px;
+    }
+
+
+}

@@ -1,0 +1,36 @@
+
+JS.js
+
+let pagePanier = [];
+let panierTampon = [];
+
+
+
+
+
+let sumPastille = 0;
+function countPanier(){
+    for (let i=0; i<panierTampon.length; i++){
+        sumPastille += Number.parseInt(panierTampon[i].quantité);
+    }
+    pastille.textContent = sumPastille;
+    }
+countPanier();
+
+
+
+
+
+panier.JS
+
+let pastille = document.getElementById('in-cart-items-num');
+
+
+function sumTotal(){
+    let sum = 0;
+    for (let i=0; i<panierTampon.length; i++){
+        sum += panierTampon[i].prix*panierTampon[i].quantité;
+    }
+    subtotal.textContent = Math.round((sum + Number.EPSILON)*100)/100;
+}
+sumTotal()

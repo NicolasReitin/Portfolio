@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="/img/tirelire.png"/>
+    <title>Mon budget</title>
+
+  </head>
+
+  <body>
+    <div class="titreSite">
+      <h1>MON BUDGET</h1>
+      <img class="logoHead" src="img/tirelire50.png" alt="">
+    </div>  
+    <div class="container" id="cf">
+
+<!--------------------------------------------------------------------Formulaire crédit-------------------------------------------------------------------------------->
+      <div class="formulaires">
+        <div class="formulaire1">
+          <h2>Crédit</h2>
+          <form action="" id="form">
+            <div class="formDate">
+                <input type="date" id="date">
+            </div>
+            <div class="forMontant">
+                <input type="number" id="valeur" placeholder="Montant">
+            </div>
+            <div class="formCategorie">
+              <select name="categorie" id="categorie" placeholder="Selectionnez une categorie">
+                <option value="" disabled selected>Selectionnez une catégorie</option>
+                <option value="">Aucune catégorie</option>
+                <option value="">Salaire</option>
+                <option value="">Prestation</option>
+                <option value="">Rente</option>
+                <option value="">Loyer</option>
+                <option value="">Héritage</option>
+                <option value="">Entrée exceptionnelle</option>
+              </select>
+            </div>
+
+            <!-- <div class="formCategorie">
+              <input type="text" id="categorie" placeholder="Categorie">
+            </div> -->
+
+            <div class="formEtablissement">
+                <input type="text" id="etablissement" placeholder="Etablissement">
+            </div>
+            <div class="formBouton">
+              <button type="button" class="btn btn-success" onclick="newCredit()">Ajouter opération</button>
+            </div>  
+          </form>
+        </div>
+<!--------------------------------------------------------------------Formulaire débit-------------------------------------------------------------------------------->
+        <div class="formulaire2">
+          <h2>Débit</h2>
+          <form action="" id="form">
+            <div class="formDate">
+                <input type="date" id="date-">
+            </div>
+            <div class="forMontant">
+                <input type="number" id="valeur-" placeholder="Montant">
+            </div>
+            <div class="formCategorie">
+                <select name="categorie" id="categorie-">
+                  <option value="" disabled selected>Selectionnez une catégorie</option>
+                  <option value="">Aucune catégorie</option>
+                  <option value="">Achat en ligne</option>
+                  <option value="">Restaurant</option>
+                  <option value="">Commerce</option>
+                  <option value="">Carburant</option>
+                </select>
+            </div>
+            <div class="formEtablissement">
+                <input type="text" id="etablissement-" placeholder="Etablissement">
+            </div>
+            <div class="formBouton">
+              <button type="button" class="btn btn-danger" onclick="newDebit()">Ajouter opération</button>
+            </div> 
+            
+          </form>
+        </div>
+
+<!--------------------------------------------------------------------Solde-------------------------------------------------------------------------------->
+        <div class="solde">
+          <h4 id="textSoldeInitial">Solde initial</h4>
+          <div class="soldeInitial" id="divSoldeInitial">
+            <input  type="number" id="initial" placeholder="Indiquez votre solde initial">
+            <button type="button" class="btn btn-secondary" onclick="addSoldeInitial()">Valider</button>
+          </div>
+          <h2>Solde</h2>
+          <p id="solde_final"></p>
+        </div>
+<!--------------------------------------------------------------------Fin formulaire complet-------------------------------------------------------------------------------->
+      </div>
+<!--------------------------------------------------------------Recherche ------------------------------------------------------>
+<div class="formulaire3">
+  <h2>Recherche</h2>
+  <form action="" id="form" class="blocRec">
+    <div class="formDate">
+        <input type="date" id="dateRec" class="rec_date">
+    </div>
+    <div class="formBouton">
+      <button type="button" class="btn btn-outline-info buttonForm3" onclick="rechercheDate()">Chercher par date</button>
+    </div>
+    <div class="formCategorie">
+      <select name="categorie" id="categorieRec" placeholder="Selectionnez une categorie">
+        <option value="">Salaire</option>
+        <option value="">Prestation</option>
+        <option value="">Rente</option>
+        <option value="">Loyer</option>
+        <option value="">Héritage</option>
+        <option value="">Entrée exceptionnelle</option>
+        <option value="" disabled selected>Sélectionnez une catégorie</option>
+        <option value="">Aucune catégorie</option>
+        <option value="">Achat en ligne</option>
+        <option value="">Restaurant</option>
+        <option value="">Commerce</option>
+        <option value="">Carburant</option>
+      </select>
+    </div>
+    <div class="formBouton">
+      <button type="button" class="btn btn-outline-info buttonForm3" onclick="recherche()">Chercher par Catégorie</button>
+      <!-- on ajoute un bouton qui permet de refresh la page du tableau et de faire réapparaitre toutes les opérations stockées, pour sortir de la recherche -->
+      <button class="btn btn-outline-secondary refresh" type="button" onclick="generate()"><img src="img/refresh.png" alt=""></button>
+    </div> 
+
+
+  </form>
+</div>
+<!---------------------------------------------------------------------Formulaire de balance entre deux dates---------------------------------------------------------------->
+<div class="balance">
+  <h5>Comparer deux dates</h5>
+  <input type="date" id="date1">
+  <input type="date" id="date2">
+  <button type="button"  class="btn btn-outline-info buttonForm3" onclick="comparaison()">Lancer la comparaison</button>
+  <div class="balanceDisplay" id="affichageBalance"></div>
+</div>
+<!--------------------------------------------------------------------Tableau-------------------------------------------------------------------------------->
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Date</th>
+            <th scope="col">Montant</th>
+            <th scope="col">Catégorie</th>
+            <th scope="col">Etablissement</th>   
+          </tr>
+        </thead>
+
+        <tbody id="tbody">
+          
+        </tbody>
+      </table>
+
+    </div> <!---------------------Fin container--------------------------->
+<!--------------------------------------Footer-------------------------------------->
+ <div class="container">
+    <footer class="py-3 my-4">
+      <div class="social">
+        <a href="https://www.instagram.com/nicolasreitin/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+        <a href="https://www.facebook.com/nicolas.reitin.3" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+        <a href="https://www.linkedin.com/in/nicolasreitin/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+        <a href="https://github.com/NicolasReitin" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+      </div>
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="#" >Home</a></li> 
+        <li class="nav-item"><a href="#" >Services</a></li>
+        <li class="nav-item"><a href="#" >About</a></li>
+        <li class="nav-item"><a href="#" >Terms</a></li>
+        <li class="nav-item"><a href="#" >Privacy Policy</a></li>
+      </ul>
+      <p class="text-center text-muted">&copy; 2022 Made by NR. All rights reserved.</p>
+    </footer>
+  </div>
+
+    <!-- ------------------------------------Scripts------------------------------------ -->
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="json/json.json"></script>
+    <script src="js/js.js" defer></script>
+  </body>
+</html>
+

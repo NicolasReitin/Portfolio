@@ -1,0 +1,510 @@
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+html{
+    font-family: 'Signika','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/*----------------------------------------------------------------Header----------------------------------------------------------------*/
+header{
+    height: 20%;
+    background-color:rgb(30,30,30);
+    display: flex;
+    justify-content: none;
+}
+.blocLogo{
+    width: 10%;
+}
+.logo{
+    width: 80%;
+    min-width: 100px;
+    max-height: auto;
+    margin: 10%;
+    border-radius: 30%;
+}
+.cityAccount{
+    width: 12%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.cityChoice{
+    width: 150px;
+    height: 40px;
+}
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+.searchBar{
+    width: 80%;
+}
+.loupe{
+    width: 25px;
+    height: 25px;
+    margin-top: 8px;
+    margin-left: -40px;
+}
+.blocAccount{
+    width: 10%;
+    text-align: center;
+    font-weight: bolder;
+    color: whitesmoke;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+.blocAccount a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 20px;
+}
+.blocAccount a:hover{
+    color: rgb(255,153,0);
+}
+
+.dropdown{
+    width: 15%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 5%;
+    margin-left: 10%;
+    margin-right: 1%;
+    position: relative;
+}
+.dropdown span{
+    position: absolute;
+    top: 15px;
+    right: 95%;
+    background-color: rgb(255,153,0);
+    color: whitesmoke;
+    font-size: 12px;
+    padding: 1px 6px;
+    border-radius: 50%;
+}
+.icoPanier{
+    width: 60px;
+    position: absolute;
+    top: 20px;
+    right: 100%;
+}
+.dropdown p{
+    color: whitesmoke;
+    font-size: 15px;
+    font-weight: bolder;
+    margin-left: 10px;
+}
+.dropdown p a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+
+
+/*----------------------------------------------------------------Navbar----------------------------------------------------------------*/
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    gap: 1%;
+    padding-right: 2%;
+    padding-bottom: 10px;
+    font-size: 20px;
+    width: 100%;
+    border: solid 1px rgb(15,15,15);
+    background-color: whitesmoke;
+    margin-bottom: 0;
+}
+.navbar a{
+    text-decoration: none;
+    color: rgb(15,15,15);
+}
+.navbar a:hover{
+    color: rgb(15,15,15);
+    border-bottom: solid 4px rgb(255,153,0);
+}
+
+/*----------------------------------------------------------------Menu cachée----------------------------------------------------------------*/
+
+/* menu caché "Toutes" */
+.menuCache{
+    transform:translateX(-600px)
+}
+.menuToutes{
+    width: 20%;
+    height: 100vh;
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    background-color: rgb(30,30,30);
+    transition: transform 400ms;
+}
+.menuToutes hr{
+    color: whitesmoke;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.menuToutes h2{
+    color: whitesmoke;
+}
+#sousMenu p{
+    color: whitesmoke;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.sousMenu2 a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.sousMenu2 li :hover{
+    color: rgb(255,153,0);
+}
+#close{
+    color: rgb(255,153,0);
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 30px;
+    position: relative;
+    top: -40px;
+    left : 85%;
+}
+/* ------------------------------------------------Aside / Menuleft------------------------------------------------ */
+section{
+    display: flex;
+    background-color: rgb(30,30,30);
+}
+aside{
+    width: 300px;
+    height: 1000px;
+}
+.diplayNone{
+    display: none;
+}
+
+.menuLeftOptions{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+aside h2{
+    color: whitesmoke;
+    font-size: 20px;
+}
+aside ul{
+    margin-top: 20px;
+    font-size: 15px;
+}
+aside li :hover{
+    color: rgb(255,153,0);
+}
+section hr{
+    color: whitesmoke;
+}
+
+
+/*--------------Page d'accueil--------------------*/
+
+.imgCarousel{
+    width: 500px;
+    overflow: hidden;
+}
+.carousel-item{
+    width: 500px;
+}
+
+/*---------------------------------------------------Page d'accueil---------------------------------------------*/
+.firstAccueil{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 5%;
+    text-align: center;
+}
+.firstAccueil h1{
+    font-size: 40px;
+}
+.text{
+    text-align: center;
+}
+.firstAccueil .text span{
+    color: rgb(255,153,0);
+}
+.firstAccueil .text p{
+    font-size: 15px;
+}
+.firstAccueil .text{
+    margin-top: 10%;
+    width: 30%;
+}
+.icoAccueil{
+    width: 15px;
+    margin-right: 10px;
+}
+.firstImage{
+    width: 400px;
+    border-radius: 5%;
+    margin-bottom: 20%;
+    margin-right: 50px;
+}
+.secondImage{
+    width: 400px;
+    border-radius: 5%;
+}
+.secondAccueil h3{
+    text-align: center;
+    color: rgb(255,153,0);
+    font-size: 15px;
+    font-weight: bolder;
+}
+.secondAccueil h2{
+    text-align: center;
+    color: rgb(30,30,30);
+    font-size: 30px;
+}
+.accueilCard{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5%;
+}
+.accueil2Card{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5%;
+}
+.accueilCard a{
+    text-decoration: none;
+    color: rgb(30,30,30)
+}
+.accueilCard p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+.cardImage{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.thirdAccueil h4{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+.thirdAccueil .accueilCard{
+    margin: 0 10%;
+}
+.thirdAccueil p{
+    text-align: justify;
+    font-size: 12px;
+}
+.cardImage2{
+    width: 500px;
+}
+.accueilCard .btn{
+    color: whitesmoke !important;
+}
+.localCard{
+    text-align: center;
+    width: 500px;
+}
+.livraisonCard{
+    text-align: center;
+    width: 500px;
+}
+/*---------------------------------------------------Section / Card----------------------------------------------*/
+#cf{
+    background-color: whitesmoke;
+    padding: 5%;
+}
+.imgCard{
+    width: 300px;
+    height: 250px;
+    border-radius: 10%;
+    margin-top: 10px;
+}
+.card{
+    width: 325px;
+    background-color: whitesmoke;
+    border: solid 1px rgb(179, 179, 179);
+    border-radius: 4%;
+    color: black;
+    display: block;
+    margin: 20px;
+    padding-bottom: 10px;
+}
+.cardPanier{
+    width: 30px;
+    margin-bottom: 10px;
+}
+.container-fluid select{
+    margin-right: 10%;
+}
+.container-fluid label{
+    margin-top: 5%;
+    margin-right: 10%;
+}
+
+/* ------------------------------------Formulaire de contact------------------------------------ */
+
+.map{
+    margin-top: 1%;
+}
+.contact .container{
+    margin-top: 5%;
+    margin-bottom: 8%;
+}
+.contact h2{
+    text-align: center;
+    color: whitesmoke;
+}
+.contact p, .contact hr, .contact label{
+    color: whitesmoke;
+}
+.map_formu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 50px 50px;
+}
+.map_formu p{
+    margin-top: 100px;
+    font-size: 20px;
+}
+.form-group{
+    width: 400px;
+}
+/*----------------------------------------------------------------Footer----------------------------------------------------------------*/
+footer{
+    background-color: rgb(30,30,30);
+}
+.aPropos{
+    margin-left: 10%;
+}
+.newsLetter h5{
+    color: rgb(255,153,0);
+    text-align: center;
+}
+.newsLetter p{
+    color: whitesmoke;
+    text-align: center;
+}
+.formNewsletter{
+    margin-top: 1%;
+    text-align: center;
+}
+.legiNewsletter{
+    margin-top: 1%;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 9px;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+.legiNewsletter a{
+    color: whitesmoke
+}
+footer input{
+    background-color: rgb(30,30,30);
+    color: whitesmoke;
+}
+footer input:focus{
+    outline: none;
+}
+.blocFooter{
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+.blocFooter h4{
+    color: whitesmoke;
+    font-weight: bolder;
+}
+.blocFooter a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+.pHover :hover{
+    color: rgb(255,153,0);
+    text-decoration: none;
+}
+.blocLogoFooter{
+    margin-right: 50px;
+}
+.logoFooter{
+    width: 25%;
+    max-height: auto;
+    margin-left: 5%;
+    margin-top: 10%;
+    border-radius: 30%;
+}
+.blocSocial{
+    display: flex;
+    gap: 5%;
+}
+.imgIconFooter{
+    width: 30px;
+    margin-left: 5%;
+}
+.iconFooter :hover{
+    transform: scale(1.20);
+}
+footer hr{
+    color: whitesmoke;
+}
+.mention{
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    margin-top: 2%;
+}
+.mention p {
+    font-size: 12px;
+}
+.mention a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+.mention p :hover{
+    color: rgb(255,153,0);
+}
+
+/*----------------------------------------------------------------Divers----------------------------------------------------------------*/
+
+.benjamin{
+    all: unset;
+    color: whitesmoke;
+}
+.btn-warning{
+    color: whitesmoke;
+}
+
+/* ------------------------------------retour haut de page------------------------------------ */
+#scrollUp
+
+{   
+position: fixed;
+bottom : 10px;
+right: -200px;
+opacity: 0.5;
+}
+
+
+/* ------------------------------------Menu burger------------------------------------ */
+
+
+.navbarBurger {
+    display: none;
+    width: 100%;
+    box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
+}
+

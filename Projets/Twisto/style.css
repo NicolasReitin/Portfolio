@@ -1,0 +1,279 @@
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+/* /*body---------$/ */
+body{
+    height: 900px;
+}
+/*-----------------------header---------------------------*/
+
+header{
+    height: 50vh;
+}
+#bus{
+    width: 100%;
+    position: relative;
+    top: -55px;
+    z-index: -1;
+}
+/*-----------------------menu burger---------------------------*/
+#ch{
+    display: none;
+}
+#lab{
+    width: 30px;
+    height: 30px;
+    background:linear-gradient(rgb(230, 190, 96) 0%, rgb(230, 190, 96) 20%, transparent 21%, transparent 40%, rgb(98, 82, 67) 41%, rgb(98, 82, 67) 60%, transparent 61%, transparent 80%, rgb(230, 190, 96) 81%, rgb(230, 190, 96) 100%);
+    margin: 6px;
+    border-radius: 3px;
+    display: none;
+}
+/*-----------------------fin menu burger---------------------------*/
+
+nav{
+    display: flex;
+    justify-content: center !important;
+}
+
+nav a{
+    color: rgb(255, 255, 255) !important;
+    font-size: 25px;
+    position: relative; 
+    text-decoration: none;
+    margin-left: 30px;
+    justify-content: space-evenly !important;
+}
+
+
+header a:hover{
+    transform: scale(1.20);
+}
+#navCentre{
+    border-radius: 5px;
+    margin: auto;
+    margin-top: -12vh;
+    width: 80%;  
+}
+
+.me-2{
+    margin-top: 15px;
+    padding: auto;
+}
+
+.container-fluid{
+    height: 80px;
+    justify-content: center;
+    margin: auto !important;
+}
+
+/*-----------------------Accueil---------------------------*/
+.accueil{
+    margin-top: 10%;
+    display: flex;
+    gap: 2%;
+}
+.info{
+    width: auto;
+    height: auto;
+    margin-top: 5%;
+    margin-left: 2%;
+}
+.iconL{
+    height: 20px;
+}
+#img_test{
+    width: 90%;
+}
+
+
+
+/*-----------------------tarif---------------------------*/
+.tarifs{
+    margin-top: 10%;
+}
+.case_price img{
+    width: 80%;
+    margin-left: 10%;
+}
+.pdv img{
+    width: 60%;
+    margin-top: 50px;
+    margin-left: 20%;
+}
+/*-----------------------Réseau---------------------------*/
+section{
+    margin-top: 10%;
+    height: auto;
+    margin-left: 10%;
+}
+
+section .reseau_twerkto{
+    width: 95%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.logobus {
+    width: 40%;
+    height: 40%;
+}
+.logotram{
+    width: 40%;
+    height: 30%;
+}
+
+section .ligne_bus{
+    position: relative;
+    width: 12%;
+    height: 115vh;
+    border: 2px solid black;
+}
+
+section .ligne_bus .logobus{
+    position: relative;
+    width: 30%;
+    height: 2vh;
+    object-fit: contain;
+}
+
+section .plan_ville{
+    width: 75%;
+    height: 60%;
+    justify-content: center;
+
+}
+section .plan_ville img{
+    width: 100%;
+    height: 92vh;
+    object-position: center;
+}
+section .ligne_tram{
+    position: relative;
+    width: 12%;
+    height: 150vh;
+    border: 2px solid black;
+}
+section .ligne_tram li img .logotram{
+    position: relative;
+    width: 30%;
+    height: 2vh;
+    object-fit: contain;
+}
+
+/*-----------------------Actu---------------------------*/
+aside{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10%;
+    gap: 50px;
+}
+aside a{
+    text-decoration: none;
+    color: black;
+}
+aside a:hover{
+    text-decoration: none;
+    color: black;
+}
+.card{
+    width: 400px;
+}
+aside h3{
+    color: red;
+}
+/*-----------------------Contact---------------------------*/
+
+.map{
+    margin-top: 3%;
+}
+.map_formu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 50px;
+}
+.map_formu p{
+    margin-top: 100px;
+    font-size: 20px;
+}
+.form-group{
+    width: 400px;
+}
+
+/*-----------------------footer---------------------------*/
+.social{
+    text-align: center;
+}
+ion-icon {
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    margin-left: 20px;
+  }
+ion-icon:hover {
+    color: gold;
+    transform: scale(1.20);
+}
+
+footer li a{
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+}
+footer li:hover{
+    transform: scale(1.20);
+}
+footer li a:hover{
+    color: gold;
+    font-weight: bolder;
+}
+
+/* ------------------------------------Jquery------------------------------------ */
+#scrollUp
+
+{   
+position: fixed;
+bottom : 10px;
+opacity: 0.5;
+}
+
+/*-----------------------Media queries---------------------------*/
+
+
+@media all and (max-width:1080px){
+    #burger{
+        display: block;
+        position:absolute;
+        right: 0;
+        left: 0;
+        padding-top: 10px;
+        z-index: 1;
+        transform: translate(-700px,0PX) ;
+        transition: all 0,5s linear;
+        justify-content: flex-start;
+        flex-direction: column;
+        background-color: rgba(20,20,20,0.7);
+        width: fit-content;
+        border-radius: 5px;
+    }
+    #navCentre{
+        border-radius: 5px;
+        margin-top: -8vh;
+        width: 80%;  
+    }
+    #burger a{
+        width: auto;
+        display: flex;
+    }
+    #ch:checked+#burger{
+        transform: translate(0PX,0PX);
+        transition: all 0,5s linear;
+    }
+    #lab{
+        display: block;
+    }
+}

@@ -1,0 +1,172 @@
+body{
+    width: auto;
+    background-color: bisque;
+}
+#bloc_page{
+    width: 60%;
+    height: 500px;
+    margin: auto;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+}
+
+#titre_principale{
+   display: flex;
+   flex-direction: column;
+   
+}
+#logo{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+#logo img{
+    width: 59px;
+    height: 60px;
+    border-radius: 5px;
+}
+
+
+header h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin: 0 0 0 10px;
+}
+header h2{
+    font-family: serif;
+    font-size: 1.1em;
+    margin-top: 0px;
+    font-weight: normal;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+}
+nav li{
+    margin-right: 15px;
+}
+nav a {
+    font-size: 1.3em;
+    text-decoration: none;
+    padding-bottom: 3px;
+    color: #181818;
+
+}
+nav a:hover
+{
+    color: #760001;
+    border-bottom: 3px solid #760001;
+}
+#banniere_image{
+    background: url(../images/sanfrancisco.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#banniere_description{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.788);
+}
+
+#banniere_description a{
+    color: white;
+    background-color: #ac090c;
+    padding: 8px;
+    margin: 1%;
+    border-radius: 5px;
+}
+section{
+    width: 100%;
+    display: flex;
+    gap: 30px
+}
+article{
+    width: auto;
+    text-align: justify;
+}
+
+.yoda{
+    width: 400px;
+    height: 250px;
+}
+aside{
+    width: auto;
+    background-color: rgb(97, 89, 80);
+    margin-top: 20px;
+    border-radius: 10px;
+    color: white;
+    padding: 2%;
+    position: relative;
+}
+#fleche_bulle{
+    position: absolute;
+    top:100px;
+    left: -10px;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    border-top: 2px solid black;
+}
+#listes_amis{
+    display: flex;
+    gap: 40%;
+}
+
+@media screen and (max-width: 1072px) {
+    #bloc_page{
+        width: 90%;
+    }
+    nav{
+        width: auto;
+    }
+    nav ul{
+        flex-direction: column;
+    }
+
+    nav li{
+        padding: 2px;
+    }
+    nav a:hover{
+        border: 0;
+    }
+    #banniere_image{
+        display: none;
+    }
+    section{
+        display: block;
+
+    }
+    .image-wrapper{
+        text-align: center;
+    }
+    .yoda{
+        width: 100%;
+        height: auto;
+        max-width: 600px;
+    }
+    #fleche_bulle{
+        position: absolute;
+        transform: rotate(90deg);
+        top:-14px;
+        left: 50%;
+    }
+    #listes_amis{
+        display: block;
+    }
+    footer{
+        display: block;
+    }
+
+}
