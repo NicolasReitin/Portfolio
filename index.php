@@ -12,7 +12,7 @@ include "Includes/header.php";
                 <p class="para2_home">en cours de formation</p>
             </div>
             <div class="image_avatar">
-                <img src="images/Avatar_avec_pc.png" alt="avatar">
+                <img src="images/Avatar_avec_pc.svg" alt="avatar">
             </div>
         </div>
 
@@ -110,22 +110,28 @@ include "Includes/header.php";
         
             <div class="case_images">
                 <div class="bloc_projet">
-                    <h3>Site Local Market</h3>
+                    <h3>Spotizer</h3>
                     <div class="bloc_image">
-                        <a href="Projets/localMarket/index.php"><img src="images/Apercu_LocalMarket.png" alt="Site Local Market" class="images_projet"></a>
-                    </div> 
+                        <a href="Projets/Spotizer/public/index.php"><img src="images/Aperçu_Spotizer.png" alt="Spotizer" class="images_projet"></a>
+                    </div>
                 </div>
                 <div class="bloc_projet">
-                    <h3>E_formation</h3>
+                    <h3>NR formation</h3>
                     <div class="bloc_image">
                         <a href="Projets/E_formation/index.php"><img src="images/Apercu_E_formation.png" alt="pokéball" class="images_projet"></a>    
                     </div>
                 </div>
                 <div class="bloc_projet">
-                    <h3>API Météo</h3>
+                    <h3>Weather Live</h3>
                     <div class="bloc_image">
                         <a href="Projets/meteo/index.html"><img src="images/Apercu_appli_meteo.png" alt="pokéball" class="images_projet"></a>    
                     </div>
+                </div>
+                <div class="bloc_projet">
+                    <h3>Local Market</h3>
+                    <div class="bloc_image">
+                        <a href="Projets/localMarket/index.php"><img src="images/Apercu_LocalMarket.png" alt="Site Local Market" class="images_projet"></a>
+                    </div> 
                 </div>
                 <div class="bloc_projet">
                     <h3>Site Budget</h3>
@@ -137,12 +143,6 @@ include "Includes/header.php";
                     <h3>Hôtel unique</h3>
                     <div class="bloc_image">
                         <a href="Projets/Hotel_unique/index.html"><img src="images/Apercu_hotel_unique.png" alt="hotel_unique" class="images_projet"></a>      
-                    </div>
-                </div>
-                <div class="bloc_projet">
-                    <h3>Salon de coiffure</h3>
-                    <div class="bloc_image">
-                        <a href=""><img src="img/enCours2.png" alt="Calculatrice" class="images_projet"></a>      
                     </div>
                 </div>
                 <div class="bloc_projet">
@@ -158,7 +158,7 @@ include "Includes/header.php";
                     </div>
                 </div>
                 <div class="bloc_projet">
-                    <h3>Snake</h3>
+                    <h3>Salon de coiffure</h3>
                     <div class="bloc_image">
                         <a href=""><img src="img/enCours2.png" alt="Site Twisto" class="images_projet"></a>      
                     </div>

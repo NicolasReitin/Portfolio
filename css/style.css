@@ -16,9 +16,10 @@ body{
 }
 /* ------------------------------------différentes sections------------------------------------ */
 header{
-    height: 10vh;
+    z-index: 500;
 }
 .home{
+    margin-top: 10vh;
   height: 90vh;
 }
 .presentation{
@@ -43,17 +44,24 @@ footer{
     height: 100%;
 }
 /* ------------------------------------menu de nav------------------------------------ */
+.backgroundnav{
+    z-index: 2;
+    width: 100%;
+    height: 10vh;
+    position: fixed; 
+    background: #191b1f94;
+}
 nav{
     display: flex;
     justify-content: flex-end;
     margin-right: 100px;
-    margin-top: 1%;
 }
 nav label, #toggle{
     display: none;
 }
 
 .logo{
+    z-index: 3;
     margin-left: 4%;
     margin-top: 1%;
     width: 90px;
@@ -61,6 +69,11 @@ nav label, #toggle{
     position: absolute;
     top: 1%;
     left: 1%;
+    position: fixed;
+}
+.main_menu{
+    z-index: 4;
+    position: fixed;
 }
 ul{
     display: flex;
@@ -150,6 +163,7 @@ h7{
     transition: opacity 0.9s;
   }
   .box_cv {
+    z-index: 0;
     display: flex; 
     justify-content: center;
     position: relative;
@@ -330,13 +344,13 @@ width: calc(100% - 10px);
 width: calc(95% - 10px);
 }
 .bar.scroll3::before{
-width: calc(60% - 10px);
+width: calc(50% - 10px);
 }
 .bar.scroll4::before{
 width: calc(60% - 10px);
 }
 .bar.scroll4_5::before{
-width: calc(60% - 10px);
+width: calc(75% - 10px);
 }
 .bar.scroll5::before{
 width: calc(90% - 10px);
@@ -402,9 +416,7 @@ h2{
     width: 450px;
     height: 300px;
     background-color: #333;
-    border-radius: 15px;
-    /* transition: ease-in-out 0.5s; */
-    /* margin-top: 20px; */
+    /* border-radius: 15px; */
     margin-bottom: 20px;
 }
 /* .images_projet:hover{
@@ -422,7 +434,7 @@ h2{
     overflow: hidden;
 }
 .bloc_projet img:hover{
-    transform: scale(1.1);
+    transform: scale(1.2);
     transition: ease-in-out 0.5s;
     border-radius: 15px;
 }
@@ -470,7 +482,7 @@ footer ion-icon {
   }
 footer ion-icon:hover {
     color: gold;    
-    transform: scale(1.50);
+    transform: scale(1.20);
     transition: ease-in-out 0.5s;
 }
 
@@ -497,6 +509,9 @@ opacity: 0.5;
     header{
         height: auto;
     }
+    .backgroundnav{
+        display: none;
+    }
     .logo{
         display: flex;
         justify-content: center;
@@ -513,12 +528,15 @@ opacity: 0.5;
         margin-right: 0px;
         margin-top: 1%;
     }
- 
+    
     nav .main_menu 
     {
+        z-index: initial;
         display: none;
         flex-direction: column;
         height: 220px;
+        position: initial;
+
     }
     nav .main_menu ul {
         display: block;

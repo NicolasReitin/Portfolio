@@ -16,11 +16,12 @@
             <div class="logo" id="Home">
                     <a href="#"><img src="images/logo_blanc.png" alt="logo Nico" class="logo"></a>
             </div>
+            <div class="backgroundnav"></div>
             <nav>                
                 <!-- ------------------------------------MENU------------------------------------ -->
                 <label for="toggle">☰</label>
                 <input type="checkbox" id="toggle">
-                <div class="main_menu ">
+                <div class="main_menu">
                     <ul>
                         <li><a href="#Home">Accueil</a></li>
                         <li><a href="#Présentation">Présentation</a></li>
