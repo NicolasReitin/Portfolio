@@ -6,10 +6,10 @@ include "Includes/header.php";
     <section class="home">
         <div class="home_avatar">
             <div class="text_avatar">
-                <h7>Salut👋🏽, je suis</h7>
+                <h7>Salut, moi c'est</h7>
                 <h6>Nicolas <br> REITIN</h6>
                 <p id="textdynamic" class="para_home"></p>
-                <p class="para2_home">en cours de formation</p>
+                <!-- <p class="para2_home">en cours de formation</p> -->
             </div>
             <div class="image_avatar">
                 <img src="images/Avatar_avec_pc.svg" alt="avatar">
@@ -21,25 +21,18 @@ include "Includes/header.php";
     <!--------------------------------------Section présentation-------------------------------------->
     <section class="presentation">
         <div class="container">
-            <h4 id="Présentation">Salut, moi c'est Nicolas, ravi de vous rencontrer.</h4>
+            <h4 id="Présentation">Salut, moi c'est Nicolas, je suis ravi de vous rencontrer.</h4>
             <p>
-            Je suis actuellement en formation (Bac +2) Développeur Web et Web Mobile <br> 
-            et je recherche une entreprise afin d'effectuer un Bac+3 en alternance de <br> 
-            Concepteur Développeur d'Applications sur le secteur de Caen et alentour <br> 
-            ou en semi-remote / full remote dans toute la France à partir de <br>
-            mi-novembre 2022 jusqu'à fin juillet 2023. <br><br>
-            J'ai travaillé pendant 12 ans dans le secteur bancaire et souhaite maintenant travailler<br>
-            dans le secteur du Web qui est depuis toujours un secteur que j'affectionne particulièrement <br>
-            et dans lequel je souhaite maintenant y faire carrière. <br><br>
-            Je vous présente ici mon portfolio et les projets sur lesquels j'ai travaillé.
+            Je viens de terminer une formation de développeur Web et d'obtenir mon diplôme et je <b>recherche actuellement une entreprise</b> dans laquelle je pourrais apporter
+            mon <b>savoir-faire</b> et mon <b>savoir-être</b> et acquérir de <b>nouvelles compétences.</b> <br>
+            J'aimerais ensuite continuer sur une alternance de <b>Concépteur Développeur d'Applications</b> à partir de septembre 2023. <br>
+            Je recherche sur <b>Caen</b> et ses alentours dans le cadre d'un emploi en présentiel ou bien dans <b>toute la France</b> dans le cadre d'un hybride ou d'un full-remote. <br>
+            J'ai également travaillé pendant 12 ans dans le secteur bancaire et le courtage et suite à une reconversion professionnelle, j'ai décidé de faire du métier de développeur
+            mon nouveau métier et d'y faire carrière "pour le meilleur et pour le pire". <br> <br>
+
+            <u>Je vous présente ici mon portfolio et les projets sur lesquels j'ai travaillé :</u> 
             </p>
 
-            <!-- <div class="box_cv">
-                <p class="click">Click to zoom</p>
-                <a href="images/cv2022.png">
-                    <img src="images/cv2022.png" alt="CV" class="mt-5" style="width: 180px">
-                </a>
-            </div> -->
             
             <div class="box_cv">
                 <p class="click">Click to zoom</p>
@@ -90,7 +83,7 @@ include "Includes/header.php";
                         <span class="margin_icon_skill"><ion-icon name="logo-sass" style="color: #cd669a;"></ion-icon></span><div id="scroll6" class="bar sass " data-skill="SASS"></div>
                     </div>
                     <div class="icon_skill">
-                        <span class="margin_icon_skill"><ion-icon name="logo-vue" style="color: #3fb984;"></ion-icon></span><div id="scroll7" class="bar vuejs " data-skill="Vue.JS"></div>
+                        <span class="margin_icon_skill"><ion-icon name="git-merge-outline" style="color: #f05033;"></ion-icon></span><div id="scroll7" class="bar git " data-skill="Git"></div>
                     </div>
                     <div class="icon_skill">
                         <span class="margin_icon_skill"><img src="icones/bootstrap.svg" alt="" style="width: 60px;"></span><div id="scroll8" class="bar bootstrap " data-skill="Bootstrap"></div>
@@ -112,55 +105,55 @@ include "Includes/header.php";
                 <div class="bloc_projet">
                     <h3>Spotizer</h3>
                     <div class="bloc_image">
-                        <a href="Projets/Spotizer/public/index.php"><img src="images/Aperçu_Spotizer.png" alt="Spotizer" class="images_projet"></a>
+                        <a href="Projets/Spotizer/public" target="_blank"><img src="images/Aperçu_Spotizer.png" alt="Spotizer" class="images_projet"></a>
                     </div>
                 </div>
                 <div class="bloc_projet">
                     <h3>NR formation</h3>
                     <div class="bloc_image">
-                        <a href="Projets/E_formation/index.php"><img src="images/Apercu_E_formation.png" alt="pokéball" class="images_projet"></a>    
+                        <a href="Projets/E_formation/index.php" target="_blank"><img src="images/Apercu_E_formation.png" alt="pokéball" class="images_projet"></a>    
                     </div>
                 </div>
                 <div class="bloc_projet">
                     <h3>Weather Live</h3>
                     <div class="bloc_image">
-                        <a href="Projets/meteo/index.html"><img src="images/Apercu_appli_meteo.png" alt="pokéball" class="images_projet"></a>    
+                        <a href="Projets/meteo/index.html" target="_blank"><img src="images/Apercu_appli_meteo.png" alt="pokéball" class="images_projet"></a>    
                     </div>
                 </div>
                 <div class="bloc_projet">
                     <h3>Local Market</h3>
                     <div class="bloc_image">
-                        <a href="Projets/localMarket/index.php"><img src="images/Apercu_LocalMarket.png" alt="Site Local Market" class="images_projet"></a>
+                        <a href="Projets/localMarket/index.php" target="_blank"><img src="images/Apercu_LocalMarket.png" alt="Site Local Market" class="images_projet"></a>
                     </div> 
                 </div>
                 <div class="bloc_projet">
                     <h3>Site Budget</h3>
                     <div class="bloc_image">
-                        <a href="Projets/Appli_budget/index.html"><img src="images/Apercu_appli_budget.png" alt="Appli budget" class="images_projet"></a>      
+                        <a href="Projets/Appli_budget/index.html" target="_blank"><img src="images/Apercu_appli_budget.png" alt="Appli budget" class="images_projet"></a>      
                     </div>
                 </div>
                 <div class="bloc_projet">
                     <h3>Hôtel unique</h3>
                     <div class="bloc_image">
-                        <a href="Projets/Hotel_unique/index.html"><img src="images/Apercu_hotel_unique.png" alt="hotel_unique" class="images_projet"></a>      
+                        <a href="Projets/Hotel_unique/index.html" target="_blank"><img src="images/Apercu_hotel_unique.png" alt="hotel_unique" class="images_projet"></a>      
                     </div>
                 </div>
                 <div class="bloc_projet">
-                    <h3>Boulangerie</h3> 
+                    <h3>Site bien-être</h3> 
                     <div class="bloc_image">
-                        <a href=""><img src="img/enCours2.png" alt="Bubble_aim" class="images_projet"></a>      
+                        <a href="" target="_blank"><img src="img/enCours2.png" alt="Bubble_aim" class="images_projet"></a>      
                     </div>
                 </div>
                 <div class="bloc_projet">
                     <h3>Boucherie / traiteur</h3>
                     <div class="bloc_image">
-                        <a href=""><img src="img/enCours2.png" alt="Site Twisto" class="images_projet"></a>      
+                        <a href="" target="_blank"><img src="img/enCours2.png" alt="Site Twisto" class="images_projet"></a>      
                     </div>
                 </div>
                 <div class="bloc_projet">
                     <h3>Salon de coiffure</h3>
                     <div class="bloc_image">
-                        <a href=""><img src="img/enCours2.png" alt="Site Twisto" class="images_projet"></a>      
+                        <a href="" target="_blank"><img src="img/enCours2.png" alt="Site Twisto" class="images_projet"></a>      
                     </div>
                 </div>
             </div>

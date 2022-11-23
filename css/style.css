@@ -326,8 +326,8 @@ background-color: #fe2d1f;
 .bar.sass::before{
 background-color: #cd669a;
 }
-.bar.vuejs::before{
-background-color: #3fb984;
+.bar.git::before{
+background-color: #f05033;
 }
 .bar.bootstrap::before{
 background-color: #563d7c;
@@ -344,13 +344,13 @@ width: calc(100% - 10px);
 width: calc(95% - 10px);
 }
 .bar.scroll3::before{
-width: calc(50% - 10px);
-}
-.bar.scroll4::before{
 width: calc(60% - 10px);
 }
+.bar.scroll4::before{
+width: calc(70% - 10px);
+}
 .bar.scroll4_5::before{
-width: calc(75% - 10px);
+width: calc(90% - 10px);
 }
 .bar.scroll5::before{
 width: calc(90% - 10px);
@@ -359,7 +359,7 @@ width: calc(90% - 10px);
 width: calc(80% - 10px);
 }
 .bar.scroll7::before{
-width: calc(10% - 10px);
+width: calc(75% - 10px);
 }
 .bar.scroll8::before{
 width: calc(95% - 10px);
@@ -416,7 +416,7 @@ h2{
     width: 450px;
     height: 300px;
     background-color: #333;
-    /* border-radius: 15px; */
+    transition: 1s;
     margin-bottom: 20px;
 }
 /* .images_projet:hover{
@@ -425,17 +425,17 @@ h2{
 } */
 .bloc_projet{
     margin-top: 35px;
-    transition: ease-in-out 0.5s; 
+    /* transition: 1s;  */
     overflow: hidden;
     
 }  
 .bloc_image{
-    transition: ease-in-out 0.5s;
-    overflow: hidden;
+    margin-top: 20px;
+    /* transition: 1s;
+    overflow: hidden; */
 }
 .bloc_projet img:hover{
     transform: scale(1.2);
-    transition: ease-in-out 0.5s;
     border-radius: 15px;
 }
 
@@ -649,3 +649,4 @@ opacity: 0.5;
 
 }
 
+1
