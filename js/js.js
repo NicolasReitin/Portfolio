@@ -97,7 +97,7 @@ new Typewriter(txtAnim, {
 // .typeString('<strong>Back-End</strong> !')
 // .pauseFor(1000)
 // .deleteChars(10)
-.typeString('<strong>Full-Stack!</strong>')
+.typeString('<strong>Web !</strong>')
 .start()
 
 
@@ -110,7 +110,7 @@ let modalImg = document.getElementById("img01");
 let captionText = document.getElementById("caption");
 img.onclick = function(){
   modal.style.display = "block";
-  modalImg.src = "images/CV_2022.png";
+  modalImg.src = "images/CV2023.png";
   nonScroll();
 }
 // Get the <span> element that closes the modal

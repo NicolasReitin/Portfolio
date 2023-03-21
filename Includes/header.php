@@ -23,7 +23,7 @@
                 <input type="checkbox" id="toggle">
                 <div class="main_menu">
                     <ul>
-                        <li><a href="#Home">Accueil</a></li>
+                        <li><a href="#">Accueil</a></li>
                         <li><a href="#Présentation">Présentation</a></li>
                         <li><a href="#Mes compétences">Compétences</a></li>
                         <li><a href="#Mes projets">Projets</a></li>
@@ -32,27 +32,3 @@
                 </div>
             </nav>
         </header>
-
-    <!-- <div class=" navbar-collapse" >
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li>
-                  <a class="active aIcone" aria-current="page" href="#"><img class="icone" src="img/enveloppe.png" alt="courrier"></a>
-                </li>
-                <li>
-                  <a class="active aIcone" aria-current="page" href="#"><img class="icone" src="img/cloche.png" alt="alert"></a>                
-                </li>
-                <li>
-                  <a class="active avatar" aria-current="page" href="#"><img class="avatar" src="img/avatar.png" alt="avatar"></a>                
-                </li>
-                <li class="dropdown">
-                  <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#">Mon compte</a></li>
-                    <li><a class="dropdown-item" href="#">Mon tableau de bord</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="deconnexion.php">Déconnexion</a></li>
-                  </ul>
-                </li>
-              </ul>
-              
-            </div> -->

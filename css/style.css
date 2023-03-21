@@ -105,8 +105,10 @@ li a:hover{
     min-width: 400px;
 }
 .image_avatar img{
-    width: 650px;
+    width: auto;
     height: 550px;
+    /* width: 650px;
+    height: 550px; */
 }
 h6{
   font-size: 70px;
@@ -365,7 +367,7 @@ width: calc(75% - 10px);
 width: calc(95% - 10px);
 }
 .bar.scroll9::before{
-width: calc(30% - 10px);
+width: calc(50% - 10px);
 }
 
 

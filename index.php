@@ -12,7 +12,7 @@ include "Includes/header.php";
                 <!-- <p class="para2_home">en cours de formation</p> -->
             </div>
             <div class="image_avatar">
-                <img src="images/Avatar_avec_pc.svg" alt="avatar">
+                <img src="images/Avatar_avec_pc.png" alt="avatar">
             </div>
         </div>
 
@@ -23,10 +23,9 @@ include "Includes/header.php";
         <div class="container">
             <h4 id="Présentation">Salut, moi c'est Nicolas, je suis ravi de vous rencontrer.</h4>
             <p>
-            Je viens de terminer une formation de développeur Web et d'obtenir mon diplôme et je <b>recherche actuellement une entreprise</b> dans laquelle je pourrais apporter
-            mon <b>savoir-faire</b> et mon <b>savoir-être</b> et acquérir de <b>nouvelles compétences.</b> <br>
-            J'aimerais ensuite continuer sur une alternance de <b>Concépteur Développeur d'Applications</b> à partir de septembre 2023. <br>
-            Je recherche sur <b>Caen</b> et ses alentours dans le cadre d'un emploi en présentiel ou bien dans <b>toute la France</b> dans le cadre d'un hybride ou d'un full-remote. <br>
+            Je viens de terminer une formation de développeur Web et d'obtenir mon diplôme (Titre de certification - Développeur Web)
+            et je <b>recherche actuellement une entreprise</b> dans laquelle je pourrais apporter mon <b>savoir-faire</b> et mon <b>savoir-être</b> et acquérir de <b>nouvelles compétences.</b> <br><br>
+            J'aimerais pour cela effectuer une alternance de <b>Concépteur Développeur d'Applications</b> à partir de septembre 2023 sur <b>Caen</b> et ses alentours dans le cadre d'un emploi en présentiel ou bien dans <b>toute la France</b> dans le cadre d'un hybride ou d'un full-remote. <br><br>
             J'ai également travaillé pendant 12 ans dans le secteur bancaire et le courtage et suite à une reconversion professionnelle, j'ai décidé de faire du métier de développeur
             mon nouveau métier et d'y faire carrière "pour le meilleur et pour le pire". <br> <br>
 
@@ -37,7 +36,7 @@ include "Includes/header.php";
             <div class="box_cv">
                 <p class="click">Click to zoom</p>
                 <!-- Trigger the Modal -->
-                <img id="myImg" src="images/cv2022.png" alt="CV" class="mt-5" style="width: 300px">
+                <img id="myImg" src="images/CV2023.png" alt="CV" class="mt-5" style="width: 300px">
             </div>
             <!-- The Modal -->
             <div id="myModal" class="modal">
@@ -49,7 +48,7 @@ include "Includes/header.php";
 
 
             <form action="">
-            <a href="Download/CV2022.pdf" target="_blank"><button type="button" class="btn btn-outline-warning">Télécharger CV</button></a>
+            <a href="Download/CV2023.pdf" target="_blank"><button type="button" class="btn btn-outline-warning">Télécharger CV</button></a>
             </form>
         </div>
     </section>
@@ -133,17 +132,17 @@ include "Includes/header.php";
                     </div>
                 </div>
                 <div class="bloc_projet">
-                    <h3>Hôtel unique</h3>
-                    <div class="bloc_image">
-                        <a href="Projets/Hotel_unique/index.html" target="_blank"><img src="images/Apercu_hotel_unique.png" alt="hotel_unique" class="images_projet"></a>      
-                    </div>
-                </div>
-                <div class="bloc_projet">
-                    <h3>Site bien-être</h3> 
+                    <h3>Site de sophrologie / hypnose (projet en cours)</h3> 
                     <div class="bloc_image">
                         <a href="" target="_blank"><img src="img/enCours2.png" alt="Bubble_aim" class="images_projet"></a>      
                     </div>
                 </div>
+                <div class="bloc_projet">
+                    <h3>Hôtel unique</h3>
+                    <div class="bloc_image">
+                        <a href="Projets/Hotel_unique/index.html" target="_blank"><img src="images/Apercu_hotel_unique.png" alt="hotel_unique" class="images_projet"></a>      
+                    </div>
+                </div>                
                 <div class="bloc_projet">
                     <h3>Boucherie / traiteur</h3>
                     <div class="bloc_image">
