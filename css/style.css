@@ -254,7 +254,7 @@ h7{
 
 
 /* ------------------------------------Sections Compétences------------------------------------ */
-@keyframes load{
+/* @keyframes load{
 from {
     width: 0%
 }
@@ -288,7 +288,6 @@ margin-top: 40px;
 font-size: 14px;
 color: whitesmoke;
 font-weight: bolder;
-/* text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.829); */
 }
 .bar::before{
 content:  attr(data-skill);
@@ -308,8 +307,6 @@ animation: load 2s 0s;
 -moz-animation: load 2s 0s;
 -o-animation: load 2s 0s;
 }
-
-
 .bar.css::before{
 background-color: #006bc0;
 }
@@ -368,7 +365,7 @@ width: calc(95% - 10px);
 }
 .bar.scroll9::before{
 width: calc(50% - 10px);
-}
+} */
 
 
 
@@ -378,6 +375,9 @@ width: calc(50% - 10px);
     justify-content: center;
 }
 .leftSide{
+    width: 100%;
+}
+.midside{
     width: 100%;
 }
 .rightSide{
