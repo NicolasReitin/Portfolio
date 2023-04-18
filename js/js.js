@@ -97,7 +97,7 @@ new Typewriter(txtAnim, {
 // .typeString('<strong>Back-End</strong> !')
 // .pauseFor(1000)
 // .deleteChars(10)
-.typeString('<strong>Web !</strong>')
+.typeString('<strong>Web junior</strong>')
 .start()
 
 
@@ -105,20 +105,20 @@ new Typewriter(txtAnim, {
 // Get the modal
 let modal = document.getElementById("myModal");
 // Get the image and insert it inside the modal - use its "alt" text as a caption
-let img = document.getElementById("myImg");
-let modalImg = document.getElementById("img01");
-let captionText = document.getElementById("caption");
+let img = document.getElementById("myImg"); // Get the image
+let modalImg = document.getElementById("img01"); // Create the modal
+let captionText = document.getElementById("caption"); // Get the caption
 img.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = "images/CV2023.png";
-  nonScroll();
+  modal.style.display = "block";  
+  modalImg.src = "images/CV2023.png"; 
+  nonScroll(); 
 }
 // Get the <span> element that closes the modal
 let span = document.getElementsByClassName("close")[0];
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-  ouiScroll();
+span.onclick = function() { 
+  modal.style.display = "none"; // Hide the modal
+  ouiScroll();// Show the modal
 } 
 
 // annuler scroll au click sur le CV et le modal

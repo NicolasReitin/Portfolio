@@ -14,7 +14,7 @@
           <li class="nav-item"><a href="#" >Terms</a></li>
           <li class="nav-item"><a href="#" >Privacy Policy</a></li> -->
         </ul>
-        <p class="text-center text-muted">&copy; 2022 Made by NR. All rights reserved.</p>
+        <p class="text-center text-muted">&copy; 2023 Made by NR. All rights reserved.</p>
       </footer>
     </div>
         <!--------------------------------------scroll pour retour haut de page------------------------------------ -->

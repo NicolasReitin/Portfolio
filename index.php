@@ -6,7 +6,7 @@ include "Includes/header.php";
     <section class="home">
         <div class="home_avatar">
             <div class="text_avatar">
-                <h7>Salut, moi c'est</h7>
+                <!-- <h7>Salut, moi c'est</h7> -->
                 <h6>Nicolas <br> REITIN</h6>
                 <p id="textdynamic" class="para_home"></p>
                 <!-- <p class="para2_home">en cours de formation</p> -->
@@ -167,13 +167,16 @@ include "Includes/header.php";
             <h2 id="Contact">Contact</h2>
             <div class="map_formu">
                 <p>
-                    <ion-icon class="tel" name="call-outline"></ion-icon> <a href="tel:+33695398460">06.95.39.84.60</a>
+                    <ion-icon class="tel" name="call-outline"></ion-icon> <a href="tel:+33695398460">06.02.08.34.43</a>
                     <br>
                     <br>
                     <ion-icon class="mail" name="mail-outline"></ion-icon><a href="mailto: contact@nicolas.reitin.fr">  contact@nicolas.reitin.fr</a> 
                 </p>
                 <div class="formu">
-                    <form action="" method="post">
+                    <p>
+                        <a href="mailto: contact@nicolas.reitin.fr"><input type="email" class="btn btn-outline-warning" value="Contact par mail"></a>
+                    </p>
+                    <!-- <form action="" method="post">
                     <div class="form-group">
                         <label for="nom">Entrez votre nom</label>
                         <input type="text" class="form-control" id="nom" placeholder="Entrez votre nom" name="nom">
@@ -193,7 +196,7 @@ include "Includes/header.php";
                     <div class="form-group mt-2">
                         <input type="submit" class="btn btn-outline-warning " id="nom" value="Envoyer mon message" name="envoyer">
                     </div>
-                    </form>
+                    </form> -->
                 </div>
             </div>
         </div>
