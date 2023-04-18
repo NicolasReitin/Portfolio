@@ -59,44 +59,36 @@ include "Includes/header.php";
             <div class="bothSide">
                 <div class="leftSide">
                     <div class="icon_skill">
-                        <span class="margin_icon_skill"><img src="icones/logo-html.png" alt="logo html" style="width: 60px;"></ion-icon></span><div id="scroll1" class="bar " data-skill="HTML"></div>
+                        <span class="margin_icon_skill"><ion-icon name="logo-html5" style="color: #e44d26;"></ion-icon></span><div id="scroll1" class="bar " data-skill="HTML"></div>
                     </div>
-                    
-                    <div class="icon_skill">
-                        <span class="margin_icon_skill"><img src="icones/logo-php.png" alt="logo php" style="width: 60px;"></span><div id="scroll4" class="bar php " data-skill="PHP"></div>
-                    </div>
-                    <div class="icon_skill">
-                        <span class="margin_icon_skill"><img src="icones/logo-laravel.jpg" alt="logo laravel" style="width: 60px;"></ion-icon></span><div id="scroll4_5" class="bar laravel " data-skill="Laravel"></div>
-                    </div>
-                    <div class="icon_skill">
-                        <span class="margin_icon_skill"><ion-icon name="logo-wordpress" style="color: #21759a;"></ion-icon></span><div id="scroll9" class="bar wordpress " data-skill="Wordpress"></div>
-                    </div>                    
-                </div>
-                <div class="midSide">
                     <div class="icon_skill">
                         <span class="margin_icon_skill"><ion-icon name="logo-css3" style="color: #006bc0;"></ion-icon></span><div id="scroll2" class="bar css " data-skill="CSS"></div>
                     </div>
                     <div class="icon_skill">
-                        <span class="margin_icon_skill"><img src="icones/logo-sass.png" alt="logo sass" style="width: 60px;"></ion-icon></span><div id="scroll6" class="bar sass " data-skill="SASS"></div>
-                    </div>
-                    <div class="icon_skill">
-                        <span class="margin_icon_skill"><img src="icones/logo-git.png" alt="logo git" style="width: 60px;"></ion-icon></span><div id="scroll7" class="bar git " data-skill="Git"></div>
-                    </div>
-                    
-                </div>
-                <div class="rightSide">
-                    <div class="icon_skill">
                         <span class="margin_icon_skill"><ion-icon name="logo-javascript" style="color: #f7e018;"></ion-icon></span><div id="scroll3" class="bar javascript " data-skill="Javascript"></div>
                     </div>
                     <div class="icon_skill">
-                        <span class="margin_icon_skill"><img src="icones/mysql.svg" alt="logo mysql" style="width: 60px;"></span><div id="scroll5" class="bar SQL " data-skill="MySql"></div>
-                    </div>                    
-                    
-                    <div class="icon_skill">
-                        <span class="margin_icon_skill"><img src="icones/logo-bootstrap.png" alt="logo bootstrap" style="width: 60px;"></span><div id="scroll8" class="bar bootstrap " data-skill="Bootstrap"></div>
+                        <span class="margin_icon_skill"><img src="icones/php.svg" alt="logo php" style="width: 60px;"></span><div id="scroll4" class="bar php " data-skill="PHP"></div>
                     </div>
                     <div class="icon_skill">
-                        <span class="margin_icon_skill"><img src="icones/logo-symfony.png" alt="logo symfony" style="width: 60px;"></ion-icon></span><div id="scroll10" class="bar Symfony " data-skill="Symfony"></div>
+                        <span class="margin_icon_skill"><ion-icon name="logo-laravel" style="color: #fe2d1f;"></ion-icon></span><div id="scroll4_5" class="bar laravel " data-skill="Laravel"></div>
+                    </div>
+                </div>
+                <div class="rightSide">
+                    <div class="icon_skill">
+                        <span class="margin_icon_skill"><img src="icones/mysql.svg" alt="" style="width: 60px;"></span><div id="scroll5" class="bar SQL " data-skill="MySql"></div>
+                    </div>
+                    <div class="icon_skill">
+                        <span class="margin_icon_skill"><ion-icon name="logo-sass" style="color: #cd669a;"></ion-icon></span><div id="scroll6" class="bar sass " data-skill="SASS"></div>
+                    </div>
+                    <div class="icon_skill">
+                        <span class="margin_icon_skill"><ion-icon name="git-merge-outline" style="color: #f05033;"></ion-icon></span><div id="scroll7" class="bar git " data-skill="Git"></div>
+                    </div>
+                    <div class="icon_skill">
+                        <span class="margin_icon_skill"><img src="icones/bootstrap.svg" alt="" style="width: 60px;"></span><div id="scroll8" class="bar bootstrap " data-skill="Bootstrap"></div>
+                    </div>
+                    <div class="icon_skill">
+                        <span class="margin_icon_skill"><ion-icon name="logo-wordpress" style="color: #21759a;"></ion-icon></span><div id="scroll9" class="bar wordpress " data-skill="Wordpress"></div>
                     </div>
                 </div>
             </div>
