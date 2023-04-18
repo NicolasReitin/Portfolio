@@ -14,22 +14,22 @@ const animation9 = document.getElementById('scroll9');
 
 //----------------------------------------------Déclanchement skill avec scroll-------------------------------------------------------
 
-//window.addEventListener('scroll',() => {
-    //if(window.scrollY > 450) {
-        //animation1.classList.add('animation', 'scroll1');
-        //animation2.classList.add('animation', 'scroll2');
-        //animation3.classList.add('animation', 'scroll3');
-        //animation4.classList.add('animation', 'scroll4');
-        //animation4_5.classList.add('animation', 'scroll4_5');
-        //animation5.classList.add('animation', 'scroll5');
-        //animation6.classList.add('animation', 'scroll6');
-        //animation7.classList.add('animation', 'scroll7');
-        //animation8.classList.add('animation', 'scroll8');
-        //animation9.classList.add('animation', 'scroll9');
+window.addEventListener('scroll',() => {
+    if(window.scrollY > 450) {
+        animation1.classList.add('animation', 'scroll1');
+        animation2.classList.add('animation', 'scroll2');
+        animation3.classList.add('animation', 'scroll3');
+        animation4.classList.add('animation', 'scroll4');
+        animation4_5.classList.add('animation', 'scroll4_5');
+        animation5.classList.add('animation', 'scroll5');
+        animation6.classList.add('animation', 'scroll6');
+        animation7.classList.add('animation', 'scroll7');
+        animation8.classList.add('animation', 'scroll8');
+        animation9.classList.add('animation', 'scroll9');
 
 
 
-    //}
+    }
     // else{
     //     animation1.classList.remove('animation', 'scroll1');
     //     animation2.classList.remove('animation', 'scroll2');
@@ -44,7 +44,7 @@ const animation9 = document.getElementById('scroll9');
 
        
     // }
-//})
+})
 
 //----------------------------------------------Retour en haut de page-------------------------------------------------------
 
@@ -114,7 +114,7 @@ img.onclick = function(){
   nonScroll(); 
 }
 // Get the <span> element that closes the modal
-let span = document.getElementsByClassName("close")[0]; //
+let span = document.getElementsByClassName("close")[0];
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() { 
   modal.style.display = "none"; // Hide the modal
